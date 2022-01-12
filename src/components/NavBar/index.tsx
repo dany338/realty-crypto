@@ -51,7 +51,7 @@ const NavBar = () => {
             <MenuItem>
               <MenuItemLink active={(location.pathname === '/').toString()} onClick={() => setShowMobileMenu(!showMobileMenu)} to="/">
                 <div>
-                  <span>Articles</span>
+                  <span>Coins</span>
                 </div>
               </MenuItemLink>
             </MenuItem>
