@@ -1,9 +1,24 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { MemoryRouter, useLocation } from 'react-router-dom';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+  const renderApp = () => render(
+    <MemoryRouter initialEntries={[{  }]}>
+      <App />
+    </MemoryRouter>
+  );
+  test('should render content...', async () => {
+    renderApp();
+    await waitFor(() => {
+      const copyrightContainer = screen.getByTestId('copyright-container');
+      expect(copyrightContainer).toBeInTheDocument();
+    });
+
+    await waitFor(() => {
+      const navbarContainer = screen.getByTestId('navbar-container');
+      expect(navbarContainer).toBeInTheDocument();
+    });
+  });
 });

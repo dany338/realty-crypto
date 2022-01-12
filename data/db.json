@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "DANIEL GALLO",
+      "email": "dany338@gmail.com",
+      "password": "123456",
+      "token": "337cef1a-0148-449f-b55c-8697108b3f3c"
+    },
+    {
+      "id": 2,
+      "fullname": "CRISTIAN SUAREZ",
+      "email": "cristian@correo.com",
+      "password": "cristian",
+      "token": "337cef1a-0148-449f-b55c-8697108b3f32"
+    }
+  ],
+  "coins": [
+    {
+      "id": "90",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "nameid": "bitcoin",
+      "rank": 1,
+      "price_usd": "42914.60",
+      "percent_change_24h": "2.89",
+      "percent_change_1h": "0.26",
+      "percent_change_7d": "-7.93",
+      "price_btc": "1.00",
+      "market_cap_usd": "812216357879.85",
+      "volume24": 18593505507.11086,
+      "volume24a": 22490535255.580105,
+      "csupply": "18926340.00",
+      "tsupply": "18926340",
+      "msupply": "21000000",
+      "favorite": true,
+      "userId": 1
+    },
+    {
+      "id": "45219",
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "nameid": "polkadot",
+      "rank": 10,
+      "price_usd": "25.70",
+      "percent_change_24h": "7.71",
+      "percent_change_1h": "0.52",
+      "percent_change_7d": "-13.86",
+      "price_btc": "0.000602",
+      "market_cap_usd": "23068898926.44",
+      "volume24": 1027629384.365165,
+      "volume24a": 1146628649.3829756,
+      "csupply": "897657920.00",
+      "tsupply": "897657920",
+      "msupply": "1000000000",
+      "favorite": true,
+      "userId": 1
+    }
+  ]
+}
